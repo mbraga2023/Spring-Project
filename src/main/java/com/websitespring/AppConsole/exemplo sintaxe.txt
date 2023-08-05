@@ -1,0 +1,21 @@
+System.out.print("==============================");
+	System.out.print("====== TESTE =======");
+	System.out.print("==============================\n");
+
+	Console cnsl = System.console();
+	Integer qntdCaixas = Integer.parseInt(cnsl.readLine("Digite a quantidade de caixas de laranja: "));
+	//retorna String. ParseInt converte para INt;
+	
+	System.out.println("["+ qntdCaixas + "]");//contatenacao
+	//System.out.printf("[%s]", qntdCaixas);//contatenacao
+	
+	double valorlaranja = 0.50;
+	int qntLaranjaPorCaixa = 50;
+
+	System.out.println("Laranjas por caixa = 50 \n");
+	System.out.println("Valor da unidade de laranja R$" + valorlaranja + "\n");
+
+	int totalDeLaranjas = qntdCaixas * qntLaranjaPorCaixa;
+	double valorTotal = totalDeLaranjas * valorlaranja;
+
+	System.out.printf("Valor total da compra: R$" + valorTotal + "\n");
