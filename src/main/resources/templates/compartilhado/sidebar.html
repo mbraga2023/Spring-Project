@@ -18,10 +18,28 @@
     <li class="nav-item active">
         <a class="nav-link" href="/">
             <i class="fas fa-fw fa-tachometer-alt"></i>
-            <span>Dashboard - <span th:text="${nome}"></span></a>
+            <span>Dashboard  <span th:text="${nome}"></span></a>
     </li>
 
     <!-- Divider -->
+    <hr class="sidebar-divider">
+    <div class="sidebar-heading">
+        Admin
+    </div>
+
+    <div class="nav-item">
+        <a class="nav-link collapsed" href="/administradores/novo"data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>
+            Cadastrar Administrador </span></a>
+    </div>
+    <div class="nav-item">
+        <a class="nav-link collapsed" href="/administradores" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+            <i class="fas fa-fw fa-wrench"></i>
+            <span>
+        Editar Administrador</span></a>
+    </div>
+
     <hr class="sidebar-divider">
 
     <!-- Heading -->
@@ -82,8 +100,7 @@
         <div id="collapsePages" class="collapse" aria-labelledby="headingPages" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">
                 <h6 class="collapse-header">Login Screens:</h6>
-                <a class="collapse-item" href="/login.html">Login</a>
-                <a class="collapse-item" href="/register.html">Register</a>
+               
                 <a class="collapse-item" href="/forgot-password.html">Forgot Password</a>
                 <div class="collapse-divider"></div>
                 <h6 class="collapse-header">Other Pages:</h6>
