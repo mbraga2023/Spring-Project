@@ -11,4 +11,9 @@ public interface AdministradoresRepo extends CrudRepository<Administrador, Integ
 
   @Query(value="select * from administradores where email = :email and senha = :senha", nativeQuery = true)
   public Administrador Login(String email, String senha);
+
+  
+  //metodo para o login retorna um objeto Administrador e devolve o objeto instaciado
+  Administrador findByEmailAndSenha(String email, String senha);
+
 }
