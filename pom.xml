@@ -14,7 +14,6 @@
 	<name>AppConsole</name>
 	<description>project for Spring Boot generate along a web class</description>
 	<properties>
-  <java.home>/usr/lib/jvm/java-17-openjdk-amd64/bin/javac</java.home>
 		    <java.version>17</java.version>
     <maven.compiler.source>17</maven.compiler.source>
     <maven.compiler.target>17</maven.compiler.target>
@@ -70,20 +69,24 @@
       <artifactId>spring-boot-starter-thymeleaf</artifactId>
     </dependency>
 
+    <dependency>
+				<groupId>mysql</groupId>
+				<artifactId>mysql-connector-java</artifactId>
+				<version>8.0.25</version>
+		</dependency>
+
   </dependencies>
   
 
   <build>
 		<plugins>
 			<plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-compiler-plugin</artifactId>
-            <version>3.11.0</version>
-                
-        </plugin>
-    
-    
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
 		</plugins>
+    
+    
 	</build>
 
 </project>
