@@ -15,9 +15,10 @@
 	<description>project for Spring Boot generate along a web class</description>
 	<properties>
   <java.home>/usr/lib/jvm/java-17-openjdk-amd64/bin/javac</java.home>
-		
-   <maven.compiler.source>1.8</maven.compiler.source>
-    <maven.compiler.target>1.8</maven.compiler.target>
+		    <java.version>17</java.version>
+    <maven.compiler.source>17</maven.compiler.source>
+    <maven.compiler.target>17</maven.compiler.target>
+
 	</properties>
 
 
@@ -77,13 +78,8 @@
 			<plugin>
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-compiler-plugin</artifactId>
-            <configuration>
-
-                <verbose>true</verbose>
-                <fork>true</fork>
-
-            </configuration>
-
+            <version>3.11.0</version>
+                
         </plugin>
     
 			<plugin>
@@ -101,5 +97,3 @@
 	</build>
 
 </project>
-
-
